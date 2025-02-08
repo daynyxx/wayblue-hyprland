@@ -1,0 +1,13 @@
+modules:
+  - type: rpm-ostree
+    remove:
+      - qt
+      - krdp
+      - steamdeck-kde-presets-desktop
+      - wallpaper-engine-kde-plugin
+      - kdeconnectd
+      - kdeplasma-addons
+      - rom-properties-kf6
+      - kcm-fcitx5
+      - ptyxis
+      - kf6-kio-core

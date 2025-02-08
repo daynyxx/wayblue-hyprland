@@ -1,0 +1,111 @@
+* {
+  font-family: IntoneMono Nerd Font Mono;
+  font-size: 17px;
+  min-height: 0;
+}
+
+#waybar {
+  background: #1e1e2e;
+  color: #cdd6f4;
+  margin: 5px 5px;
+}
+
+#workspaces {
+  border-radius: 1rem;
+  margin: 5px;
+  background-color: #313244;
+  margin-left: 1rem;
+}
+
+#workspaces button {
+  color: #b4befe;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+
+#workspaces button.active {
+  color: #89dceb;
+  border-radius: 1rem;
+}
+
+#workspaces button:hover {
+  color: #74c7ec;
+  border-radius: 1rem;
+}
+
+#custom-music,
+#tray,
+#backlight,
+#clock,
+#battery,
+#wireplumber,
+#custom-lock,
+#custom-power {
+  background-color: #313244;
+  padding: 0.5rem 1rem;
+  margin: 5px 0;
+}
+
+#clock {
+  color: @blue;
+  border-radius: 0px 1rem 1rem 0px;
+  margin-right: 1rem;
+}
+
+#battery {
+  color: #a6e3a1;
+}
+
+#battery.charging {
+  color: #a6e3a1;
+}
+
+#battery.warning:not(.charging) {
+  color: #f38ba8;
+}
+
+#backlight {
+  color: #f9e2af;
+}
+
+#backlight, #battery {
+    border-radius: 0;
+}
+
+#wireplumber {
+  color: #eba0ac;
+  border-radius: 1rem 0px 0px 1rem;
+  margin-left: 1rem;
+}
+
+#custom-music {
+  color: #cba6f7;
+  border-radius: 1rem;
+}
+
+#custom-lock {
+    border-radius: 1rem 0px 0px 1rem;
+    color: #b4befe;
+}
+
+#custom-power {
+    margin-right: 1rem;
+    border-radius: 0px 1rem 1rem 0px;
+    color: #f38ba8;
+}
+
+#tray {
+  margin-right: 1rem;
+  border-radius: 1rem;
+}
+#window {
+  background: transparent;
+  color: #f5e0dc;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  font-style: normal;
+}

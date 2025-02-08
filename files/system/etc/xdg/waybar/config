@@ -1,0 +1,94 @@
+[
+  {
+    "backlight": {
+      "device": "intel_backlight",
+      "format": "{icon}",
+      "format-icons": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "battery": {
+      "format": "{icon}",
+      "format-alt": "{icon}",
+      "format-charging": "󰂄",
+      "format-icons": [
+        "󰁺",
+        "󰁼",
+        "󰁿",
+        "󰂂",
+        "󱟢"
+      ],
+      "format-plugged": "󱈏",
+      "states": {
+        "critical": 15,
+        "warning": 30
+      }
+    },
+    "clock": {
+      "format": " {:%H:%M}",
+      "format-alt": " {:%d/%m/%Y}",
+      "timezone": "America/Detroit",
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "custom/lock": {
+      "format": "",
+      "on-click": "swaylock",
+      "tooltip": false
+    },
+    "custom/music": {
+      "escape": true,
+      "exec": "playerctl metadata --format='{{ title }}'",
+      "format": "  {}",
+      "interval": 5,
+      "max-length": 50,
+      "on-click": "playerctl play-pause",
+      "tooltip": false
+    },
+    "hyprland/workspaces": {
+      "all-outputs": true,
+      "disable-scroll": false
+    },
+    "layer": "top",
+    "modules-center": [
+      "custom/music"
+    ],
+    "modules-left": [
+      "hyprland/workspaces",
+      "hyprland/window"
+    ],
+    "modules-right": [
+      "wireplumber",
+      "backlight",
+      "battery",
+      "clock",
+      "tray",
+      "custom/lock",
+      "custom/power"
+    ],
+    "position": "top",
+    "tray": {
+      "icon-size": 21,
+      "spacing": 10
+    },
+    "wireplumber": {
+      "format": "{node_name} {icon} {volume}%",
+      "format-icons": {
+        "default": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "format-muted": "",
+      "on-click": "pwvucontrol"
+    }
+  }
+]
